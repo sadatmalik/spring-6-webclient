@@ -11,6 +11,7 @@ import java.util.Map;
  * @author sm@creativefusion.net
  */
 public interface BeerClient {
+    Mono<BeerDTO> createBeer(BeerDTO beerDTO);
     Flux<String> listBeer();
 
     Flux<Map> listBeerMap();
