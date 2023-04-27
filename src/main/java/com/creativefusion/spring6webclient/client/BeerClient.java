@@ -22,4 +22,7 @@ public interface BeerClient {
     Mono<BeerDTO> getBeerById(String id);
     Flux<BeerDTO> getBeerByBeerStyle(String beerStyle);
     Mono<BeerDTO> updateBeer(BeerDTO beerDTO);
+    Mono<BeerDTO> patchBeer(BeerDTO dto);
+
+    Mono<Void> deleteBeer(BeerDTO dto);
 }
